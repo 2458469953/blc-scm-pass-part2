@@ -16,6 +16,7 @@
 
 <script>
 import NavMenu from './components/NavMenu.vue';
+// import Navbar from './components/Navigation.vue'; // 引入导航栏组件
 
 export default {
   data() {
@@ -26,6 +27,7 @@ export default {
   name: 'App',
   components: {
     NavMenu,
+    // Navbar
 }
 }
 
@@ -60,13 +62,3 @@ export default {
   </div>
 </template>
 
-<script>
-import Navbar from './components/Navigation.vue'; // 引入导航栏组件
-
-export default {
-  components: {
-    Navbar // 注册导航栏组件
-  },
-  // 其他组件的逻辑和代码
-}
-</script>
