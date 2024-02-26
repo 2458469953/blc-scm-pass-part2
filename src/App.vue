@@ -1,28 +1,57 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+<div id="app">
+  <el-container>
+    <el-header class="header">供应链管理系统</el-header>
+    <el-container>
+      <el-aside width=300px>
+        <NavMenu/>
+      </el-aside>
+      <el-main>
+        <router-view/>
+      </el-main>
+    </el-container>
+  </el-container>
+</div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import NavMenu from './components/NavMenu.vue';
 
 export default {
+  data() {
+    return {
+      tabComponent: 'EnterpriseAdmin',
+    }
+  },
   name: 'App',
   components: {
-    HelloWorld
-  }
+    NavMenu,
 }
+}
+
 </script>
 
-<style>
+<style scoped>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+}
+.header {
+  background-color: #409EFF;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+}
+.el-aside {
+  display: block;
+  height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background:#545c64
 }
 </style>
