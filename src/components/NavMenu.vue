@@ -13,7 +13,7 @@
                 <i class="el-icon-menu"></i>
                 <span slot="title">企业用户管理</span>
             </el-menu-item>
-          <el-menu-item index="2">
+          <el-menu-item :index="'/OrganizationEnter'">
             <i class="el-icon-menu"></i>
             <span slot="title">组织架构管理</span>
           </el-menu-item>

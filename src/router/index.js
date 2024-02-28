@@ -20,6 +20,21 @@ const routes = [
         path: "/EnterpriseLogin",
         name: "EnterpriseLogin",
         component: () => import("../components/EnterpriseLogin.vue")
+    },
+    {
+        path: "/OrganizationEnter",
+        name: "OrganizationEnter",
+        component: () => import("../components//OrganizationEnter.vue")
+    },
+    {
+        path: "/OrganizationAdmin",
+        name: "OrganizationAdmin",
+        component: () => import("../components//OrganizationAdmin.vue")
+    },
+    {
+        path: "/OrganizationMemberAdmin",
+        name: "OrganizationMemberAdmin",
+        component: () => import("../components//OrganizationMemberAdmin.vue")
     }
 ]
 const router = new VueRouter({

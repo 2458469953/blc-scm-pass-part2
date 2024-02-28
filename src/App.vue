@@ -14,6 +14,7 @@
 </div>
 </template>
 
+
 <script>
 import NavMenu from './components/NavMenu.vue';
 // import Navbar from './components/Navigation.vue'; // 引入导航栏组件
@@ -60,5 +61,5 @@ export default {
   <div>
     <Navbar />
   </div>
-</template>
+
 
